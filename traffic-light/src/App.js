@@ -24,7 +24,6 @@ export default function App() {
   let timerId = useRef();
   let intervalId = useRef();
 
-  console.log(timerId.current, activeColor);
   useEffect(() => {
     if (timerId.current) {
       clearTimeout(timerId.current);

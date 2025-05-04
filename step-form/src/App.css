@@ -1,0 +1,28 @@
+
+.App {
+  margin: 10px;
+  font-family: cursive;
+}
+
+.header-container {
+  display: flex;
+  gap: 10px;
+}
+
+.heading {
+  padding: 5px;
+  border: 1px solid #000;
+  height: 100%;
+  cursor: pointer;
+}
+
+.tab-body {
+  border: 1px solid #000;
+  padding:10px;
+}
+
+.error {
+  font-size: 10px;
+  color: red;
+  margin-left: 10px;
+}
