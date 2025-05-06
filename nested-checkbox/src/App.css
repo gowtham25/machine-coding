@@ -1,0 +1,14 @@
+.App {
+  font-family: sans-serif;
+}
+
+.parent {
+}
+
+.children {
+  padding-left: 10px;
+}
+
+input {
+  cursor: pointer;
+}
