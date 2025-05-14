@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  width: fit-content;
+  border: 1px solid grey;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  /* border: 0.5px dotted lightgrey */
+}
+
+select {
+  padding: 5px;
+}
