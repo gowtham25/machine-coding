@@ -63,6 +63,17 @@ const dataArray = [
   },
 ];
 
+// [
+//     [(0,0), (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)],
+//     [(1,0), (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7)],
+//     [(2,0), (2,1), (2,2), (2,3), (2,4), (2,5), (2,6), (2,7)],
+//     [(3,0), (3,1), (3,2), (3,3), (3,4), (3,5), (3,6), (3,7)],
+//     [(4,0), (4,1), (4,2), (4,3), (4,4), (4,5), (4,6), (4,7)],
+//     [(5,0), (5,1), (5,2), (5,3), (5,4), (5,5), (5,6), (5,7)],
+//     [(6,0), (6,1), (6,2), (6,3), (6,4), (6,5), (6,6), (6,7)],
+//     [(7,0), (7,1), (7,2), (7,3), (7,4), (7,5), (7,6), (7,7)],
+// ]
+
 const arr = [
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
@@ -84,13 +95,17 @@ export default function App() {
     return (row_index + col_index) % 2 === 0 ? "white" : "black";
   };
 
+  console.log({chessBoard})
   const changeChessAgent = (e) => {
     setSelectedOption(e.target.value);
     setChessBoard(arr);
   };
 
   const moveVertical = (row, col, steps, cloneChess) => {
+        console.log({row, col, steps, cloneChess})
+
     for (let i = row + 1; i < 8 && i - row <= steps; i++) {
+      console.log(i - row, "i :", i)
       cloneChess[i][col] = 1;
     }
 
